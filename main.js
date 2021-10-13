@@ -1,6 +1,3 @@
-import { set } from 'date-fns'
-
-
 
 const days = window.document.querySelector('#days')
 const hours = window.document.querySelector('#hours')
