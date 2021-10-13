@@ -10,7 +10,7 @@ body {
   overflow: hidden;
 }
 
-.desktop-only {
+.original-image.desktop-only {
   display: none;
 }
 
@@ -188,7 +188,7 @@ img.weds {
 
 @media only screen and (min-width: 768px) {
 
-  .desktop-only {
+  .original-image.desktop-only {
     display: block;
   }
 
