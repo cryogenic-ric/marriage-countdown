@@ -1,0 +1,207 @@
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.desktop-only {
+  display: none;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  list-style-type: none;
+}
+
+#app {
+  font-family: 'Ephesis', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#particles {
+  position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.sticky {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  background: #e4d9d8;
+  bottom: 0;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px -8px 18px 20px rgb(0 0 0 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+}
+
+.counter {
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 16px;
+  font-family: 'Italianno', cursive;
+}
+.counter li {
+  margin-top: -15px;
+  padding: 0 10px;
+  color: rgb(252, 47, 81);
+  opacity: .9;
+}
+
+.counter li span {
+  margin-top: -40px;
+  display: block;
+}
+
+.date {
+  color: red;
+  opacity: .8;
+  font-size: 26px;
+  margin-top: -30px;
+  font-family: 'Italianno', cursive;
+  font-weight: bold;
+}
+
+.location {
+  color: red;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.wedding-text {
+  margin-top: -30px;
+  margin-left: 10px;
+  color: red;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.wedding-text h1 {
+  font-weight: bold;
+}
+
+img.weds {
+  width: auto;
+  height: 36px;
+  padding: 0px 20px 0 25px ;
+}
+
+
+.design-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 74px;
+  margin: 5px;
+}
+
+.design-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 74px;
+  margin: 5px;
+}
+
+.design-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 74px;
+  margin: 5px;
+  transform: scaleX(-1);
+}
+
+
+.design-bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 74px;
+  margin: 5px;
+  transform: scaleX(-1);
+}
+
+.instrument {
+  height: 42px;
+  margin-top: -47px;
+  margin-bottom: 14px;
+  margin-left: 5px;
+}
+
+.sepia{
+  filter: sepia(100%) contrast(100%) saturate(101%) brightness(100%) hue-rotate( 0);
+}
+
+.warm {
+  filter: sepia(50%) contrast(150%) saturate(200%) brightness(100%) hue-rotate(-15deg);
+}
+
+.cold{
+  filter: hue-rotate(180deg) sepia(75%) contrast(150%) saturate(300%) hue-rotate(180deg);
+}
+
+
+.old-paper{
+  position:relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.original-image{
+  width:100%;
+  height:100%;
+  display:inline-block;
+  margin-top: -10px;
+}
+.overlay{
+  mix-blend-mode:multiply;
+  position:absolute;
+  display:inline-block;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+}
+.overlay img{
+  width:100%;
+  height:100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .old-paper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .original-image {
+    margin-top: -103px;
+  }
+}

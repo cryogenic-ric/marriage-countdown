@@ -1,0 +1,16 @@
+{
+  "name": "shaadi",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.6.4"
+  },
+  "dependencies": {
+    "date-fns": "^2.25.0",
+    "particles.js": "^2.0.0"
+  }
+}
