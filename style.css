@@ -185,6 +185,55 @@ img.weds {
   height:100%;
 }
 
+.ganpati {
+  height: 201px;
+  position: absolute;
+  opacity: .2;
+}
+
+.pulsate {
+    
+  animation: pulse 1s linear infinite;
+}
+
+.shake {
+  animation: shake 10s linear infinite;
+}
+
+
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(1px, 1px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-2px, -2px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+
+@-webkit-keyframes "pulse" {
+0% {
+ -webkit-transform: scale(1.1);
+ transform: scale(1.1);
+}
+50% {
+-webkit-transform: scale(0.8);
+transform: scale(0.8);
+}
+100% {
+ -webkit-transform: scale(1);
+transform: scale(1);
+}
+}
 
 @media only screen and (min-width: 768px) {
 
